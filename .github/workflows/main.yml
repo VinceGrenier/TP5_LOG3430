@@ -24,4 +24,4 @@ jobs:
           sleep 30
       - name: Load test
         run: |
-          locust --headless -u 10000 -r 100 -t 120
+          locust --headless -u 10000 -r 100 -t 120 --host http://localhost:5000/
